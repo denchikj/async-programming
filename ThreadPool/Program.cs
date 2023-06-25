@@ -13,6 +13,11 @@
             Report();
             ThreadPool.QueueUserWorkItem(new WaitCallback(Task2));
             Report();
+
+            Thread.Sleep(4000);
+            Console.WriteLine("Press any key to start\n");
+            Console.ReadKey();
+            Report();
         }
 
         private static void Task1(object? state)
